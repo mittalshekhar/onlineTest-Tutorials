@@ -55,7 +55,7 @@ body {
     foreach ($content_data as $value) { 
      
       ?>
-       <p><b>Question <?php echo $i ?></b id="MyInput"> : <?php echo @$value->question; ?></p>
+       <p><b id="MyInput">Question <?php echo $i ?></b>: <?php echo @$value->question; ?></p>
 
     <div class="">
       <label <?php if($value->options1 == $value->answer) echo 'class="abcd"';?> <?php if($value->options1 == @$r_data['ques'.@$i.'']) echo 'class="worng"';?>><p>1. <?php echo @$value->options1; ?><i <?php if(@$value->options1 == @$value->answer){ echo 'class=" fa fa-check"';} elseif(@$value->options1 == @$r_data['ques'.$i.'']){ echo 'class="fa fa-close"';} else{}?> aria-hidden="true"></i></p></label>

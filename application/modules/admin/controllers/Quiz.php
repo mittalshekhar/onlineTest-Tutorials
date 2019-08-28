@@ -311,3 +311,199 @@ public function chart(){
 
 
 }
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> Order confirmation</title>
+        <style type="text/css">
+            /* EMBEDDED CSS*/
+
+            /* Forces Hotmail to display normal line spacing. */
+            .ExternalClass {
+                width: 100%;
+                background-color: #d9d9d9;
+            }
+
+            body {
+                font-size: 13px;
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+                -webkit-font-smoothing: antialiased;
+                font-family: "Tahoma",sans-serif;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
+            #bodyTable {
+                height: 100% !important;
+                margin: 0;
+                padding: 0;
+                width: 100% !important;
+            }
+            table {
+                border-collapse: collapse;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                border-spacing: 0;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
+            td, td a {
+
+                text-decoration: none;
+            }
+            td {
+
+                line-height: 1;
+            }
+            img {
+                border: none;
+                outline: none;
+                text-decoration: none;
+                display: inline-block;
+                height: auto
+            }
+            p {
+                margin: 0;
+                padding: 0;
+            }
+            a:hover, td a:hover {
+
+                outline: none;
+            }
+
+            
+            @media only screen and (max-width: 599px) {
+                body[yahoo] .wrapper {
+                    width: 100% !important;
+                }
+                body[yahoo] .al-left {
+                    text-align: left !important;
+                }
+            }
+
+            @media only screen and (max-width: 479px) {
+                body[yahoo] .img-resize480 {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+                body[yahoo] .font25 {
+                    font-size: 25px !important;
+                }
+                body[yahoo] .font18 {
+                    font-size: 18px !important;
+                }
+                body[yahoo] .ver-spacer {
+                    height: 50px !important;
+                }
+                body[yahoo] .center {
+                    text-align: center !important;
+                }
+            }
+
+        </style>
+        <!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">
+        table {border-collapse: collapse;}
+        </style>
+        <![endif]-->
+    </head>
+    <body style="width:100% !important; color:#ffffff; font-family: Arial, Helvetica, sans-serif;font-size:14px; line-height:1 !important;background: #eaeff0; " alink="#9d470a" link="#9d470a"  text="#333333" yahoo="fix">
+        <table  border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" width="600" style="background:#ffffff;">
+            <!-- Start Section-1 -->
+            <tr>
+                <td width="20"><img src="<?php echo base_url();?>images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                <td>
+                    <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                        <tr>
+                            <td height="27"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                                    <tr>
+                                        <td width="184"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                                        <td style="center" align="center"><a href="#" style="display: inline-block;"><img src="<?php echo base_url();?>/images/logo2_trimmed.png" border="0" width="245" height="71" alt="" title=""  style="display: block;" /></a></td>
+                                        <td width="184"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="20"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: 'Tahoma',sans-serif;color: #4a4a4b;font-size: 15px;text-align: left;line-height: 20px;"><?php echo nl2br($notification); ?></td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="20"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: 'Tahoma',sans-serif;color: #4a4a4b;font-size: 15px;text-align: left;line-height: 20px;">This message has been distributed by <a href="<?php echo fetch_value(TBL_SYSTEMCONFIG,'systemVal',array('systemName'=>'SITE_URL'));?>" style="font-weight: 700;color: #22bddb;">Cheqdin</a> on behalf of <span style="color:#e95858;font-weight:bold"><?php echo fetch_value(TBL_ADMINLOGIN, 'Fname', array('id' => $nursery_id));?></span>. </td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="10"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td  align="left"><a href="<?php echo fetch_value(TBL_SYSTEMCONFIG,'systemVal',array('systemName'=>'SITE_URL'));?>" style="display: inline-block;"><img src="<?php echo base_url();?>/images/logo2_trimmed.png" border="0" width="122" height="35" alt="" title=""  style="display: block;" /></a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: 'Tahoma',sans-serif;color: #4a4a4b;font-size: 14px;text-align: left;font-weight: 700;">Learn. Evolve. Inspire</td>
+                        </tr>
+                        <tr>
+                            <td height="25"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td  align="left"><a href="<?php echo fetch_value(TBL_SYSTEMCONFIG,'systemVal',array('systemName'=>'FACEBOOK'));?>" style="display: inline-block;"><img src="<?php echo base_url();?>/images/new_icons/facebook.png" border="0" width="40" height="40" alt="" title=""  style="display: block;" /></a></td>
+                                        <td  align="left"><a href="<?php echo fetch_value(TBL_SYSTEMCONFIG,'systemVal',array('systemName'=>'TWITTER'));?>" style="display: inline-block;"><img src="<?php echo base_url();?>/images/new_icons/twitter.png" border="0" width="40" height="40" alt="" title=""  style="display: block;" /></a></td>
+                                                                                <td  align="left"><a href="<?php echo fetch_value(TBL_SYSTEMCONFIG,'systemVal',array('systemName'=>'LINKED_IN'));?>" style="display: inline-block;"><img src="<?php echo base_url();?>/images/new_icons/linkedin.png" border="0" width="40" height="40" alt="" title=""  style="display: block;" /></a></td>
+                                        <td  align="left"><a href="<?php echo fetch_value(TBL_SYSTEMCONFIG,'systemVal',array('systemName'=>'YOUTUBE'));?>" style="display: inline-block;"><img src="<?php echo base_url();?>/images/new_icons/youtube.png" border="0" width="40" height="40" alt="" title=""  style="display: block;" /></a></td>
+                                                                                <td  align="left"><a href="<?php echo fetch_value(TBL_SYSTEMCONFIG,'systemVal',array('systemName'=>'INSTAGRAM'));?>" style="display: inline-block;"><img src="<?php echo base_url();?>/images/new_icons/instagram.png" border="0" width="40" height="40" alt="" title=""  style="display: block;" /></a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="15"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+                        </tr>
+                        
+                    </table>
+                </td>
+                <td width="20"><img src="<?php echo base_url();?>/images/blank.gif" width="1" height="1" alt="" title=""/></td>
+            </tr>
+            <!-- End Section-1 -->
+            
+            <!-- End Section-1 -->
+
+        </table>
+    </body>
+</html>
+
